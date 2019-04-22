@@ -1,0 +1,10 @@
+C:\Users\Musa Ünal\source\repos\pttabletuygulaması\pttabletuygulaması\bin\Debug\pttabletuygulaması.exe.config
+C:\Users\Musa Ünal\source\repos\pttabletuygulaması\pttabletuygulaması\bin\Debug\pttabletuygulaması.exe
+C:\Users\Musa Ünal\source\repos\pttabletuygulaması\pttabletuygulaması\bin\Debug\pttabletuygulaması.pdb
+C:\Users\Musa Ünal\source\repos\pttabletuygulaması\pttabletuygulaması\obj\Debug\pttabletuygulaması.Form1.resources
+C:\Users\Musa Ünal\source\repos\pttabletuygulaması\pttabletuygulaması\obj\Debug\pttabletuygulaması.Properties.Resources.resources
+C:\Users\Musa Ünal\source\repos\pttabletuygulaması\pttabletuygulaması\obj\Debug\pttabletuygulaması.csproj.GenerateResource.cache
+C:\Users\Musa Ünal\source\repos\pttabletuygulaması\pttabletuygulaması\obj\Debug\pttabletuygulaması.csproj.CoreCompileInputs.cache
+C:\Users\Musa Ünal\source\repos\pttabletuygulaması\pttabletuygulaması\obj\Debug\pttabletuygulaması.exe
+C:\Users\Musa Ünal\source\repos\pttabletuygulaması\pttabletuygulaması\obj\Debug\pttabletuygulaması.pdb
+C:\Users\Musa Ünal\source\repos\pttabletuygulaması\pttabletuygulaması\obj\Debug\pttabletuygulaması.csprojAssemblyReference.cache
