@@ -32,8 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBox_aygit_adi = new System.Windows.Forms.TextBox();
             this.label_seridurum = new System.Windows.Forms.Label();
             this.label_seri_durum = new System.Windows.Forms.Label();
+            this.label_aygit = new System.Windows.Forms.Label();
             this.button_yenile = new System.Windows.Forms.Button();
             this.button_baglan = new System.Windows.Forms.Button();
             this.label_seriport = new System.Windows.Forms.Label();
@@ -46,8 +48,7 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
-            this.label_aygit = new System.Windows.Forms.Label();
-            this.textBox_aygit_adi = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,6 +76,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Shape Display Port Settings";
             // 
+            // textBox_aygit_adi
+            // 
+            this.textBox_aygit_adi.Location = new System.Drawing.Point(84, 106);
+            this.textBox_aygit_adi.Name = "textBox_aygit_adi";
+            this.textBox_aygit_adi.Size = new System.Drawing.Size(107, 20);
+            this.textBox_aygit_adi.TabIndex = 7;
+            // 
             // label_seridurum
             // 
             this.label_seridurum.AutoSize = true;
@@ -93,6 +101,15 @@
             this.label_seri_durum.Size = new System.Drawing.Size(77, 13);
             this.label_seri_durum.TabIndex = 8;
             this.label_seri_durum.Text = "Device Status:";
+            // 
+            // label_aygit
+            // 
+            this.label_aygit.AutoSize = true;
+            this.label_aygit.Location = new System.Drawing.Point(6, 109);
+            this.label_aygit.Name = "label_aygit";
+            this.label_aygit.Size = new System.Drawing.Size(44, 13);
+            this.label_aygit.TabIndex = 6;
+            this.label_aygit.Text = "Device:";
             // 
             // button_yenile
             // 
@@ -195,27 +212,22 @@
             // 
             this.serialPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.serialPort1_DataReceived);
             // 
-            // label_aygit
+            // button3
             // 
-            this.label_aygit.AutoSize = true;
-            this.label_aygit.Location = new System.Drawing.Point(6, 109);
-            this.label_aygit.Name = "label_aygit";
-            this.label_aygit.Size = new System.Drawing.Size(44, 13);
-            this.label_aygit.TabIndex = 6;
-            this.label_aygit.Text = "Device:";
-            // 
-            // textBox_aygit_adi
-            // 
-            this.textBox_aygit_adi.Location = new System.Drawing.Point(84, 106);
-            this.textBox_aygit_adi.Name = "textBox_aygit_adi";
-            this.textBox_aygit_adi.Size = new System.Drawing.Size(107, 20);
-            this.textBox_aygit_adi.TabIndex = 7;
+            this.button3.Location = new System.Drawing.Point(218, 124);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(213, 23);
+            this.button3.TabIndex = 70;
+            this.button3.Text = "Image Sender";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(443, 286);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.comboBox2);
@@ -255,6 +267,7 @@
         private System.IO.Ports.SerialPort serialPort1;
         private System.Windows.Forms.TextBox textBox_aygit_adi;
         private System.Windows.Forms.Label label_aygit;
+        private System.Windows.Forms.Button button3;
     }
 }
 

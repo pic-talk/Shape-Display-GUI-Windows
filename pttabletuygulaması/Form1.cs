@@ -153,5 +153,12 @@ namespace pttabletuygulaması
 
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            imageSender imagePage = new imageSender();
+            imagePage.setSerial(serialPort1);
+            imagePage.Show();
+        }
     }
 }
