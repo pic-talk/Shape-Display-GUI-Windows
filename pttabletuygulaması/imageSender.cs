@@ -32,10 +32,8 @@ namespace pttabletuygulaması
         private void imageSender_Load(object sender, EventArgs e)
         {
             images.Add(new Tuple<Bitmap, string>(pttabletuygulaması.Properties.Resources.char_pikachu, ":00770000700880008000999996609797967099999080999900899999000999990&"));
-            images.Add(new Tuple<Bitmap, string>(pttabletuygulaması.Properties.Resources.rcLxGBBni, ":00770000700880008000999996609797967099999080999900899999000999990&"));
-            images.Add(new Tuple<Bitmap, string>(pttabletuygulaması.Properties.Resources.cube, ":00770000700880008000999996609797967099999080999900899999000999990&"));
-
-
+            images.Add(new Tuple<Bitmap, string>(pttabletuygulaması.Properties.Resources.rcLxGBBni, ":00000000009900990999999999999999999999999099999900099990000099000&"));
+            images.Add(new Tuple<Bitmap, string>(pttabletuygulaması.Properties.Resources.cube, ":00000000000000000009999000099990000999900009999000000000000000000&"));
         }
 
         public void setSerial(SerialPort port)
@@ -66,7 +64,9 @@ namespace pttabletuygulaması
                             Console.WriteLine(images[counter].Item2);
                             try
                             {
+                                
                                 serialport.Write(images[counter].Item2);
+                                
                             }
                             catch
                             {
@@ -112,5 +112,7 @@ namespace pttabletuygulaması
 
             }
         }
+
+      
     }
 }
