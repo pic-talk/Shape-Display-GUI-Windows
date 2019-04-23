@@ -7,5 +7,4 @@ C:\Users\Musa Ünal\source\repos\pttabletuygulaması\pttabletuygulaması\obj\Deb
 C:\Users\Musa Ünal\source\repos\pttabletuygulaması\pttabletuygulaması\obj\Debug\pttabletuygulaması.csproj.CoreCompileInputs.cache
 C:\Users\Musa Ünal\source\repos\pttabletuygulaması\pttabletuygulaması\obj\Debug\pttabletuygulaması.exe
 C:\Users\Musa Ünal\source\repos\pttabletuygulaması\pttabletuygulaması\obj\Debug\pttabletuygulaması.pdb
-C:\Users\Musa Ünal\source\repos\pttabletuygulaması\pttabletuygulaması\obj\Debug\pttabletuygulaması.csprojAssemblyReference.cache
 C:\Users\Musa Ünal\source\repos\pttabletuygulaması\pttabletuygulaması\obj\Debug\pttabletuygulaması.imageSender.resources
