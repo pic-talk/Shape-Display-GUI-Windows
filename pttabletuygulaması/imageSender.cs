@@ -21,6 +21,7 @@ namespace pttabletuygulaması
         List<Tuple<Bitmap,string>> images = new List<Tuple<Bitmap,string>>();
 
         int counter = 0;
+        bool controller = true;
 
 
         public imageSender()
@@ -58,8 +59,22 @@ namespace pttabletuygulaması
                 {
                     if (y - e.Y > (pictureBox1.Size.Height / 2) || x - e.X > (pictureBox1.Size.Width / 2))
                     {
-                        Console.WriteLine("Swipe Detected");
-                        serialport.Write(images[counter].Item2);
+                        if (controller)
+                        {
+                            Console.WriteLine("Swipe Detected");
+
+                            Console.WriteLine(images[counter].Item2);
+                            try
+                            {
+                                serialport.Write(images[counter].Item2);
+                            }
+                            catch
+                            {
+
+                            }
+                            controller = false;
+
+                        }
 
                     }
 
@@ -75,6 +90,7 @@ namespace pttabletuygulaması
         private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
         {
             mouse = false;
+            controller = true;
         }
 
         private void button1_Click(object sender, EventArgs e)

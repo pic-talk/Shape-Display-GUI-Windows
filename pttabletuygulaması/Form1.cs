@@ -48,6 +48,7 @@ namespace pttabletuygulaması
         private void button1_Click(object sender, EventArgs e)
         {
             Console.WriteLine(models[comboBox2.SelectedIndex]);
+            serialPort1.Write(models[comboBox2.SelectedIndex]);
         }
 
         private void button_baglan_Click(object sender, EventArgs e)
