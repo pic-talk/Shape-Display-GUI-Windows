@@ -34,6 +34,7 @@ namespace pttabletuygulaması
             images.Add(new Tuple<Bitmap, string>(pttabletuygulaması.Properties.Resources.char_pikachu, ":00770000700880008000999996609797967099999080999900899999000999990&"));
             images.Add(new Tuple<Bitmap, string>(pttabletuygulaması.Properties.Resources.rcLxGBBni, ":00000000009900990999999999999999999999999099999900099990000099000&"));
             images.Add(new Tuple<Bitmap, string>(pttabletuygulaması.Properties.Resources.cube, ":00000000000000000009999000099990000999900009999000000000000000000&"));
+            timer1.Interval = 2;
         }
 
         public void setSerial(SerialPort port)
@@ -61,12 +62,13 @@ namespace pttabletuygulaması
                         {
                             Console.WriteLine("Swipe Detected");
 
+                            timer1.Start();
                             Console.WriteLine(images[counter].Item2);
                             try
                             {
                                 
                                 serialport.Write(images[counter].Item2);
-                                
+                              
                             }
                             catch
                             {
@@ -105,7 +107,7 @@ namespace pttabletuygulaması
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (!(counter <= 0))
+            if (counter > 0)
             {
                 counter--;
                 pictureBox1.Image = images[counter].Item1;
@@ -113,6 +115,20 @@ namespace pttabletuygulaması
             }
         }
 
-      
+
+        
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if(Math.Abs(pictureBox1.Location.Y) > pictureBox1.Size.Height){
+                timer1.Stop();
+                pictureBox1.Location = new Point(0, 0);
+                pictureBox1.Image = null;
+            }
+            pictureBox1.Invoke((MethodInvoker)(() => pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y - 10)));
+
+
+
+        }
     }
 }
